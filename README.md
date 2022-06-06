@@ -1,7 +1,7 @@
  # Algorithms and Data Structures in Java
 
  ## Algorithms 
-- Binary Search
+- Binary Search :heavy_check_mark:
 - Breadth First 
 - Depth First Search
 - Merge Sort
