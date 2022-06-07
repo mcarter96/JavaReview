@@ -1,8 +1,13 @@
- # Algorithms and Data Structures in Java
+# Algorithms and Data Structures in Java
 
- ## Algorithms 
+## Goals
+
+Review each algorithm and data structure to get good practice and be prepared for Google interview (Mar 2023)
+
+## Algorithms
+
 - Binary Search :heavy_check_mark:
-- Breadth First 
+- Breadth First
 - Depth First Search
 - Merge Sort
 - Quicksort
@@ -27,7 +32,8 @@
 - Boyer-Moore Majority Vote
 - Euclid's
 
- ## Data Structures
+## Data Structures
+
 - Arrays
 - Linked Lists
 - Stacks
@@ -36,6 +42,3 @@
 - Trees
 - Heaps
 - Graphs
-
-## Goals
-Review each algorithm and data structure to get good practice and be prepared for Google interview (Mar 2023)
