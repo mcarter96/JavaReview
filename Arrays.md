@@ -10,7 +10,7 @@ An **array** in Java is a group of like-typed variables referred to by a common 
 - The variables in an **array** are ordered, and each has an index beginning from 0
 - Java **arrays** can also be used as a static field, a local variable, or a method parameter
 - The size of the **array** must be specified by int or short value and not long
-- The direct superclass of an **array** type is [Object]
+- The direct superclass of an **array** type is [Object](fakelink)
 - Every **array** type implements the interfaces ==Clonable== and ==java.io.Serializable==
 
 An **array** can contain primitives (byte, short, int, long, float, double, boolean, char) and object (or non-primitive) references of a class depending on the definiton of the **array**. In the case of primitive data types, the actual values are stored in contiguous memory location. In the case of class objects, the actual objects are stored in a heap segment
