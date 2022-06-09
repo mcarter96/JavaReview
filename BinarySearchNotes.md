@@ -1,8 +1,10 @@
 # Binary Search Notes
 
-## Implementation
+## Definiton
 
-**Binary Search** is a searching algorithm used in a sorted array by repeatedly diving the search interval in half. The idea of binary search is to use the inromation that the array is sorted and reduce the time complexity to O(log n)
+**Binary Search** is a searching algorithm used in a sorted array by repeatedly diving the search interval in half. The idea of **binary search** is to use the inromation that the array is sorted and reduce the time complexity to O(log n)
+
+## Implementation
 
 The basic steps to perform **binary search** are:
 
@@ -31,7 +33,7 @@ Real World Applications
 - Debugging a linear piece of code
 : If a code has many steps mostly executed in a sequence and there's a bug, we can isolate the bug by finding the earliest step where the code produces results which are different from the expected ones.
 - Figuring out resource requirements for a large system
-: Try running load tests on the sytem and binary search for the minimum amount of CPUs requires to handle a predicted load
-- Any sorted collection from any language library such as Java, .NET, C++, etc. use binary search to find values
+: Try running load tests on the sytem and **binary search** for the minimum amount of CPUs requires to handle a predicted load
+- Any sorted collection from any language library such as Java, .NET, C++, etc. use **binary search** to find values
 - Semiconductor test programs used for measuring digital timing or analog levels
 - Used to find the numerical solution to an equation

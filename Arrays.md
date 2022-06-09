@@ -17,6 +17,8 @@ An **array** can contain primitives (byte, short, int, long, float, double, bool
 
 ## Implementation
 
+### Declaring an **Array**
+
 The general form of a one-dimensional **array** declaration is: `type[] varName;`. An **array** declaration has two parts: the name and the type. The *type* declares the data type of each element that makes up the **array**. You can declare an **array** with primitive data types or with custom user-defined types (objects).
 
 Examples:
@@ -30,7 +32,31 @@ Examples:
 
 `MyClass myClassArray[];`
 
+Although the first declaration establishes that intArr is an ****array** variable, no actual array** exists. It merely tells the compiler that this variable will hold an **array** of the integer type. To link intArr to an actual, physical **array** of integers, you must allocate one using new and assign it to intArr.
+
+### Instantiating an **Array**
+
+When an **array** is declared, only a reference of the **array** is created. To create or give memory to the **array**, you create an **array** like this:
+
+`var-name = new type[size];`
+
+Here, *type* specifies the type of data being allocated, *size* determines the number of elements in the **array**, and *var-name* is the name of the **array** variable that is linked to the **array**. To use *new* to allocate an **array**, you must specify the type and numbers of elements to allocate. 
+
+`int intArr[];`
+
+`intArr = new int[20];`
+
+Or you can do it in one line, like so:
+
+`int[] intArr = new int[20];`
+
+- The elements in the **array** allocated by *new* will automatically be initialized to zero, false, or null
+- Obtaining an **array** is a two-step process. First, you must declare a variable of the desired **array** type. Second, you must allocate the memory to hold the array, using new, and assign it to the **array** variable. Thus, in Java, all **arrays** are dynamically allocated.
 
 ## Complexity
+
+Time complexity: O(n)
+
+Space complexity: O(1)
 
 ## Uses
