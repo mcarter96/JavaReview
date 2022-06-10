@@ -1,5 +1,17 @@
 import java.util.Arrays;
 
+class Car {
+    public String make;
+    public String model;
+    public int year;
+    public String color;
+    Car (String make, String model, int year, String color) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+}
 public class MyArrays {
     
     public static void printArr(int arr[]) {
@@ -47,9 +59,18 @@ public class MyArrays {
             sum += intArr[i];
         }
         System.out.println("Sum of all elements: " + sum);
+    }
 
-        
+    public static void objectArrays() {
+        Car[] cars = new Car[3];
 
+        cars[0] = new Car("Chevrolet", "Equinox", 2012, "black");
+        cars[1] = new Car("Ford", "Escape", 2014, "white");
+        cars[2] = new Car("Auid", "A8L", 2013, "black");
+
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println("Car at index: " + i + " is a " + cars[i].color + " " + cars[i].year + " " + cars[i].make + " " + cars[i].model);
+        }
     }
     public static void main(String[] args) {
         int[] arr;
@@ -64,5 +85,6 @@ public class MyArrays {
         printArr(arr);
 
         arrManipulation();
+        objectArrays();
     }
 }
