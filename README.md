@@ -34,7 +34,7 @@ Review each algorithm and data structure to get good practice and be prepared fo
 
 ## Data Structures
 
-- Arrays
+- Arrays :heavy_check_mark:
 - Linked Lists
 - Stacks
 - Queues
