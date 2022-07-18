@@ -37,3 +37,7 @@ Real World Applications
 - Any sorted collection from any language library such as Java, .NET, C++, etc. use **binary search** to find values
 - Semiconductor test programs used for measuring digital timing or analog levels
 - Used to find the numerical solution to an equation
+
+### Sources
+
+[Binary Search Notes](https://www.geeksforgeeks.org/binary-search/)

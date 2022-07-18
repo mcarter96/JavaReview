@@ -108,3 +108,8 @@ Space complexity: O(1)
 - Arrays can be used for performing matrix operations. Many databases, small and large, consist of one-dimensional and two-dimensional **arrays** whose elements are records
 - **Arrays** can be used for CPU scheduling
 - **Arrays** are used to implement other data structure like stacks, queues, heaps, hash tables, etc.
+
+### Sources
+
+[Array Notes](https://www.geeksforgeeks.org/arrays-in-java/)
+[Application of Arrays](https://www.faceprep.in/data-structures/advantages-and-disadvantages-of-arrays/)
