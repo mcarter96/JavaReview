@@ -75,6 +75,91 @@ Space Complexity: O(n)
 
 ## Inserting a Node
 
+There are three different ways to insert a node into a linked list. Each will be shown below
+
+- At the front 
+- After a given node
+- At the end
+
+### Insert at the Beginning of a Linked List
+
+1. Allocate the Node & give Node data
+2. Make next pointer of the new Node point to the head
+3. Move the head pointer to point at new Node
+
+![Insert Node at Beginning of LinkedList](Linkedlist_insert_at_start.jpeg)
+
+Here is an example of some code to insert the node at the beginning
+
+```Java
+public void insertAtBeginning(int newData) {
+    Node newNode = new Node(newData);
+    newNode.next = head;
+    head = newNode;
+}
+```
+
+### Insert After a Given Node
+
+1. Check if the given Node is null
+2. Allocate the Node & give Node data
+3. Make next pointer of new Node as the next pointer of the given Node
+4. Make next pointer of the given Node point to the new Node
+
+![Insert Node After Given Node](Linkedlist_insert_middle.jpeg)
+
+```Java
+public void insertAfterNode(Node prevNode, int newData) {
+    if (prevNode == null) {
+        System.out.println("The given previous node cannot be null");
+        return;
+    }
+
+    Node newNode = new Node(newData);
+
+    newNode.next = prevNode.next;
+
+    prevNode.next = newNode;
+}
+```
+
+### Insert Node at the End
+
+![Insert Node at the End](Linkedlist_insert_last.jpeg)
+
+1. Allocate the Node & give Node data
+2. Set the next pointer for the new Node as null
+3. Check to see if the linked list is empty. If it is, make the new node the head
+4. If the list is not empty, traverse the list to the last node
+5. Change the next pointer of the last node to point to the new Node
+
+```Java
+public void insertAtEnd(int newData) {
+    Node newNode = new Node(newData);
+    newNode.next = null;
+
+    if (head == null) {
+        head = newNode;
+        return;
+    }
+
+    Node last = head;
+    while (last.next != null) {
+        last = last.next;
+    }
+
+    last.next = newNode;
+    return;
+}
+```
+
+## Deleting Nodes
+
+Similar to inserting a node, you can delete a node in three different ways
+
+- At the beginning
+- After a given ndoe
+- At the end
 
 ### Sources
 
