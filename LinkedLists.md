@@ -10,7 +10,6 @@ Arrays can be used to store linear data of similar types, but arrays have the fo
 
 - The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage
 - Inserting a new element in an array of elements is expensive because the room has to be created for the new elements and to create room existing elements have to be shifted but in Linked List if we have the head node then we can traverse to any node through it and insert new node at the required position
-  
 - Dynamic size
 - Ease of insertion/deletion
 
@@ -19,6 +18,13 @@ Arrays can be used to store linear data of similar types, but arrays have the fo
 - Random access is not allowed. We have to access elements sequentially starting from the first node (head node). So we cannot do binary search with linked lists efficiently with its default implementation.
 - Extra memory space for a pointer is required with each element of the list.
 - Not cache friendly. Since array elements are contiguous locations, there is locality of reference which is no there in case of linked lists
+
+## Real World Application of Linked Lists
+
+- The list of songs in the music player are linked to the previous and next songs
+- In a web browser, previous and next web page URLs are linked through the previous and next buttons
+- In image viewer, the previous and next images are linked
+- Switching between two applications is carried out by using "alt+tab" in windows. It requires the functionality of circular linked lists
 
 ## Representation of Linked Lists
 
@@ -161,6 +167,33 @@ Similar to inserting a node, you can delete a node in three different ways
 - After a given ndoe
 - At the end
 
+### Delete the Beginning of Linked List
+
+Move the head pointer to the next pointer `head = head.next`
+
+
+### Delete After a Given Node
+
+Iterate through the list until you get to the given element, change the next pointer to point to the next node
+
+```Java
+
+```
+
+### Delete the End of Linked List
+
+Move through the list until you're at the second to last node, then set the next pointer to null
+
+```Java
+while (temp.next != null && temp.data != key) {
+    prev = temp;
+    temp = temp.next;
+}
+prev.next = temp.next;
+```
+
 ### Sources
 
 [Linked List Notes](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+[Linked List Insertion Notes](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/?ref=lbp)
+[Linked List Deletion Notes](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/?ref=lbp)
