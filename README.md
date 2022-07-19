@@ -35,7 +35,7 @@ Review each algorithm and data structure to get good practice and be prepared fo
 ## Data Structures
 
 - Arrays :heavy_check_mark:
-- Linked Lists
+- Linked Lists :heavy_check_mark:
 - Stacks
 - Queues
 - Hash Table
